@@ -1,0 +1,165 @@
+.boxed{
+
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 5px;
+
+}
+
+.step__text--1{
+
+    margin-bottom: 0;
+
+}
+
+.clicked__step3{
+
+    margin-top: 1rem;
+
+}
+
+
+.clicked{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    
+    &__step2{
+        
+        border-bottom: 1px solid $color-grey-1;
+        height: 6rem;
+        color: $color-blue-dark;
+        font-weight: 700;
+
+        .step__text{
+
+            font-size: 1.6rem;
+        
+        }
+
+        .change{
+
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: $color-grey-2;
+            text-decoration: underline;
+
+        }
+
+
+
+
+    }
+    .btn--4{
+
+        background-color: $color-blue;
+
+    }
+
+
+
+    &__step3{
+
+
+        color: $color-grey-2;
+        &:not(:last-child){
+            
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+        }
+
+        .step__price{
+
+            color: $color-blue-dark;
+
+        }
+
+    }
+
+}
+
+.btn--4{
+
+    background-color: $color-blue;
+
+}
+
+.total{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+
+    &__text{
+
+        color: $color-grey-2;
+        font-weight: 600;
+
+    }
+
+    &__price{
+
+        color: $color-blue;
+        font-weight: 600;
+        font-size: 1.6rem;
+
+    }
+
+
+}
+
+.confirm{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.icon__thanks{
+
+    height: 8rem;
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
+.thanks__text{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+
+.text__large{
+
+    align-self: center;
+    color: $color-blue-dark;
+    font-size: 3.5rem;
+    font-weight: 700;
+
+    
+
+}
+
+.text__small{
+
+    color: $color-grey-2;
+
+}

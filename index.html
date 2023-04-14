@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRONTEND MENTHOR: MULTISTEP FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="steps">
+
+            <div class="step step__1 step__active" data-tab="1">
+                <span class="step__number step__number--active">
+
+                    1
+
+                </span>
+
+                <div class="step__group">
+                    <span class="step__count">
+
+                        STEP 1
+                        
+                    </span>
+
+                    <div class="step__name">
+                        Your info 
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="step step__2 " data-tab="2">
+                <span class="step__number">
+
+                    2
+
+                </span>
+
+                <div class="step__group">
+                    <span class="step__count">
+
+                        STEP 2
+                        
+                    </span>
+
+                    <div class="step__name">
+                        select plan
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="step step__3" data-tab="3">
+                <span class="step__number">
+
+                    3
+
+                </span>
+
+                <div class="step__group">
+                    <span class="step__count">
+
+                        STEP 3
+                        
+                    </span>
+
+                    <div class="step__name">
+                       add-ons
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="step step__4  "data-tab="4">
+                <span class="step__number">
+
+                    4
+
+                </span>
+
+                <div class="step__group">
+                    <span class="step__count">
+
+                        STEP 4
+                        
+                    </span>
+
+                    <div class="step__name">
+                        summary
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+       
+
+            <div class="step__content steps__content--1 step__content--active" > 
+
+                <h2 class="step__content--heading">
+    
+                    Personal info
+    
+                </h2>
+    
+                <p class="step__content--sub-heading">
+    
+                    Please provide your name, email address, and phone number.
+    
+                </p>
+    
+               
+                <form action="#" class="form">
+
+                <div class="content__input">
+
+                    <div class="input__box">
+
+                        <div class="label">
+                            
+                            <label for="name" class="input__label"> Name </label>
+                            <div class="error err1">  </div>
+                            
+                        </div>
+
+                        <input type="text" class="input" placeholder="e.g Muhammad Awwal" id="name" required>
+
+                    </div>
+
+
+                    <div class="input__box">
+
+                        <div class="label">
+                            <label for="email" class="input__label"> Email Address </label>
+
+                            <div class="error err2">  </div>
+
+                            
+                        </div>
+
+                        <input type="email" class="input" placeholder="e.g muhammadawwal@gmail.com" required id="email">
+
+                    </div>
+
+                    <div class="input__box">
+                        <div class="label">
+
+                              <label for="phone" class="input__label "> Phone Number </label>
+                              <div class="error err3">  </div>
+                        </div>
+                    
+                        <input type="number" class="input" placeholder="e.g  +234  916 653 7641" id="phone" minlength="10" maxlength="17" required >
+
+                    </div>
+
+                    <button class="btn btn--1" type="submit" >
+
+                        Next  Step
+    
+                    </button >
+
+                </div>
+    
+    
+ 
+
+            </form>
+
+            </div>
+
+        <div class="step__content steps__content--2">
+
+            <h2 class="step__content--heading">
+    
+                select your plan
+
+            </h2>
+
+            <p class="step__content--sub-heading">
+                
+                You have the option of monthly or yearly billing.
+                
+            </p>
+
+            <div class="plan">
+
+                <div class="plan__list">
+
+                    <div class="name"> 
+
+                        <div class="header"> Arcade </div>
+                        <p class=" price price--1">$9/mo </p>
+                        <div class="add">  </div>
+    
+                    </div>
+
+                    <img src="/icon-arcade.svg" alt="icon-arcade" class="icon">
+    
+
+                </div>
+
+                <div class="plan__list">
+
+                    <div class="name"> 
+                        <div class="header"> Advanced </div>
+                        <p class="price price--2">$12/mo </p>
+                        <div class="add">  </div>
+    
+                     </div>
+
+                    <img src="/icon-advanced.svg" alt="icon-arcade" class="icon">
+           
+                    
+                </div>
+
+                <div class="plan__list">
+
+                    <div class="name">        
+                        <div class="header"> Pro </div>
+                        <p class="price price--3">$15/mo </p>
+                        <div class="add">  </div>
+    
+                     </div>
+
+                    <img src="/icon-pro.svg" alt="icon-arcade" class="icon">
+    
+
+
+                </div>
+
+            </div>
+
+            <div class="type">
+
+                <span class="monthly option color-d"> Monthly </span>
+                <span class="toggle__container"> 
+                
+                    <span class="toggle">  </span>
+                    
+                </span>
+
+                <span class="yearly option color-l"> Yearly </span>
+            </div>
+
+          <div class="buttons">
+
+             <div class="back"> Go Back </div>
+            <button class="btn btn--2 btns"> Next Step </button>
+
+          </div>  
+
+            
+        </div>
+
+
+
+        <div class="step__content steps__content--3 " id="add-onss">
+
+            <h2 class="step__content--heading">
+    
+                Pick add-ons
+
+            </h2>
+
+            <p class="step__content--sub-heading">
+                
+                Add-ons helps to enhance your gaming experience 
+                
+            </p>
+
+                <div class="add-ons__content add-ons__content--monthly add-ons__content--active">
+                    
+             
+
+                <div class="box box1">
+
+                    <div class="box__content">
+
+
+                        <div class="icon">
+                            <div class="empty">                                     
+                                
+                                <img src="icon-checkmark.svg" alt="check image" class="icon-check"> 
+                            
+                            </div>
+
+                             </div>
+
+                                <div class="text__box">
+
+                                    <div class="text__box--large"> Online service </div>
+                                    <div class="text__box--small"> Access to multiplayer games </div>
+
+
+                                </div>
+                            
+
+
+
+
+
+                        </div>
+
+                        <div class="price__box price__box--1">$1/mo</div>
+
+                            
+
+                        
+
+                    </div>
+
+
+                    
+                    <div class="box box2">
+
+                        <div class="box__content">
+
+                          
+                                <div class="icon">
+                                    
+                            <div class="empty">                                     
+                                
+                                <img src="icon-checkmark.svg" alt="check image" class="icon-check"> 
+                            
+                            </div>
+    
+                            </div>
+    
+                                <div class="text__box">
+
+                                    <div class="text__box--large"> Larger Storage </div>
+                                    <div class="text__box--small"> Extra 1TB of cloud save </div>
+
+
+                             </div>
+                            
+                        </div>
+
+                        <div class="price__box price__box--2">$2/mo</div>
+
+                            
+
+                        
+
+                    </div>
+
+
+                    
+                    <div class="box box3">
+
+                        <div class="box__content">
+
+                   
+                                <div class="icon">
+                                    <div class="empty">                                     
+                                        <img src="icon-checkmark.svg" alt="check image" class="icon-check"> 
+                                    
+                                    </div>
+    
+                                 </div>
+    
+
+                                 <div class="text__box">
+                                    <div class="text__box--large"> customizable profile </div>
+                                    <div class="text__box--small"> Custom theme on your profile </div>
+
+                                </div>
+                            </div>
+                            
+
+                            <div class="price__box price__box--3">$2/mo</div>
+
+                                
+    
+                            
+
+                        </div>
+
+
+
+                        <div class="buttons">
+
+                            <div class="back"> Go Back </div>
+                           <button class="btn btn--3 btns" > Next Step </button>
+               
+                         </div>  
+
+
+                    </div>
+
+                
+
+                </div>
+
+                <div class="step__content steps__content--4 ">
+
+                    
+                <h2 class="step__content--heading">
+    
+                   Finishing up
+    
+                </h2>
+    
+                <p class="step__content--sub-heading">
+    
+                    Doublecheck everything looks OK before confirming
+    
+                </p>
+                
+
+            <div class="boxed">
+
+                    
+                <div class="clicked clicked__step2">
+
+                    <div class="step__text ">
+
+                       <p class="step__text--1">Arcade</p>  
+                       <!-- <span class="Ftype"> (Monthly) </span> -->
+
+                        <div > <a href="#add-onss" class="change"> change </a> </div>
+
+                    </div>
+
+                    <div class="step__price final--1">
+
+                        $9/mo
+
+                    </div>
+                    
+                </div>
+
+                <div class="clicked clicked__step3">
+
+                    <div class="step__text step__text--2">
+
+                         online service
+
+                        
+                    </div>
+
+                    <div class="step__price final--2">
+
+                        $1/mo
+
+                    </div>
+                    
+
+                </div>
+
+                
+
+
+
+
+                </div>
+
+                <div class="total">
+
+                    <div class="total__text"> Total (per month) </div>
+                    <div class="total__price">$10/mo </div>
+
+                </div>
+                
+                <div class="buttons buttons--4">
+
+                    <div class="back"> Go Back </div>
+                   <button class="btn btn--4 btn__confirm" id="confirm">Confirm</button>
+       
+                 </div>  
+
+
+            </div>
+
+
+            <div class="step__content steps__content--5">
+            
+                <div class="confirm">
+
+                    <img src="icon-thank-you.svg" alt=" Thank icon " class="icon__thanks">
+                
+                    <div class="thanks__text">
+                        <div class="text__large"> Thank you! </div>
+                        <p class="text__small"> Thanks for confirming your subscription! We hope you have fun using our platform. if you ever need support please feel free to email us at support@loremgaming.com </p>
+                    </div>
+    
+                </div>
+
+                </div>
+
+                </div>
+
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>

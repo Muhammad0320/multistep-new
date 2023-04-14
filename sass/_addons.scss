@@ -1,0 +1,141 @@
+.add-ons__content{
+
+    display: none;
+
+    &--active{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1rem;
+       margin-top: 3rem;
+
+    }
+
+}
+
+
+
+.box{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // margin-top: ;
+    border: 1px solid $color-grey-1;
+    width: 85%;
+    padding: 8px 1.5rem;
+    height: 5rem;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover{
+
+        border: 2px solid $color-blue;
+        transform: translateY(-1rem);
+
+    }
+
+
+
+    &:not(:last-child){
+
+        margin-bottom: 2rem;
+
+    }
+
+}
+
+
+
+
+.empty{
+
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid $color-grey-1;
+    margin-right: 1rem;
+    align-self: center;
+    transform: translateY(-5px);
+    justify-self: center;
+
+
+}
+
+.box__content{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.price__box{
+
+    color: $color-blue;
+
+
+}
+
+.buttons{
+
+    width: 100%;
+
+}
+
+
+
+.icon-check{
+
+    background-color: $color-blue;
+    padding: 4px 2px;
+    border-radius: 2px;
+    opacity: 0;
+    
+}
+
+
+
+.block{
+
+   opacity: 1;
+
+}
+
+.clicked{
+
+    background-color: hsl(217, 100%, 97%);
+    border: 3px solid $color-blue;
+
+}
+
+.text__box{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    
+
+    &--large{
+
+        color: $color-blue-dark;
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+
+
+    }
+
+    &--small{
+
+        color: $color-grey-2;
+        font-size: 1.2rem;
+
+
+    }
+
+}
